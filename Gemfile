@@ -3,8 +3,6 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.2'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -26,11 +24,41 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3'
+
+# Data mapper for MongoDB
+# gem 'mongoid', '~> 5.0.0'
+
+gem 'mechanize', '~> 2.7.3'
+
+# Allows the Mongoid documents to be organised as a tree structure (or hierarchy)
+# gem 'mongoid-ancestry'
+
+# User authentication
+# gem 'devise'
+
+# Authorization library; restricts what resources a given user is allowed to access.
+# gem 'cancancan', '~> 1.10'
+
+# Use datagrid for presenting tabular data with sorting and pagination
+# gem 'datagrid', '~> 1.4'
+# gem 'kaminari', '~> 0.16'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+# Use roo for parsing Excel files
+# gem 'roo', '~> 2.3'
+
+# For simplified styling https://github.com/bkutil/pure-css-rails http://purecss.io
+# gem "pure-css-rails"
+
+# D3.js is a JavaScript library for manipulating documents based on data
+gem 'd3js-rails', '~> 3.1', '>= 3.1.6'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -41,5 +69,7 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  # gem 'table_print'
 end
 
